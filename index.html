@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkoutWebpage</title>
+    <link rel="stylesheet" href="styleWW.css">
+</head>
+<body>
+    <!-- navbar section-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">WORKOUTS!!!</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <!--home-->
+                <span class="bar"></span>
+                <!-- tris + chest -->
+                <span class="bar"></span>
+                <!-- bis + back -->
+                <span class="bar"></span>
+                <!--legs-->
+                <span class="bar"></span>
+                <!--abs-->
+                <span class="bar"></span>
+                <!--gym playlist button-->
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#push" class="navbar__links" id="push-page">Push</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#pull" class="navbar__links" id="pull-page">Pull</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#legs" class="navbar__links" id="legs-page">Legs</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#abs" class="navbar__links" id="abs-page">Abs</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="https://music.apple.com/us/playlist/gym/pl.u-2aoqPqDH8qbgyW" class="button" id="gymMusic-page">Gym Music</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- home -->
+    <div class="hero" id="home">
+        <div class="hero__container">
+            <h1 class="hero__heading">
+                WORKOUTS 
+            </h1>
+            <h2>
+                <!-- description of site for the homepage -->
+                WHEN YOU'RE BORED OF WHAT YOU'RE DOIN <br>AND YOU NEED TO SWITCH IT UP
+            </h2>
+            <br><br><p class="hero__description">
+                <!-- description of site for the homepage -->
+                All the workouts you can think of in one place.  umm i dont feel like writing it rn but add in like a description of the site and maybe the ideas for future upgrades and maybe put how many workouts there are. 
+            </p>
+        </div>
+        <!-- put some motivational quotes like just running across the screen-->
+        <div class="hero__img--container">
+            <!-- <marquee> -->
+            <img src= "quote1.png"
+                width="350"
+                height="200"
+            > <!-- </marquee> -->
+        </div>
+    </div>
+
+
+    <!-- push -->
+    <div class="push" id="push">
+        <div class="push__container">
+            <div class="push__content">
+                <h1> • Tri's & Chest • </h1>
+                <h2>it isn't about talent it's about consistency</h2>
+            </div>
+            <input type="button" class="push" value="Press Here" onclick="pushSkillGen()">
+            <div class="push__but" id="push_content">
+                <h1>• WORKOUTS, WORKOUTS, AND MORE WORKOUTS! •  </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- pull -->
+    <div class="pull" id="pull">
+        <div class="pull__container">
+            <div class="pull__content">
+                <h1> • Bi's & Back • </h1>
+                <h2>Look like a beauty, train like a beast</h2>
+            </div>
+            <input type="button" class="pull" value="Bi's and Back Workout" onclick="pullSkillGen()">
+            <div class="pull__but" id="pull_content">
+                <h1>• WORKOUTS, WORKOUTS, AND MORE WORKOUTS! • </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- legs -->
+    <div class="legs" id="legs">
+        <div class="legs__container">
+            <div class="legs__content">
+                <h1> • Legs (more butt than legs hahah) • </h1>
+                <h2>somethin cool to write here</h2>
+            </div>
+            <input type="button" class="legs" value="Legs Workout" onclick="legsSkillGen()">
+            <div class="legs__but" id="legs_content">
+                <h1>• WORKOUTS, WORKOUTS, AND MORE WORKOUTS! • </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- abs -->
+    <div class="abs" id="abs">
+        <div class="abs__container">
+            <div class="abs__content">
+                <h1> • ABS!!!! • </h1>
+                <h2>just keep livin</h2>
+            </div>
+            <input type="button" class="abs" value="Ab Workout" onclick="absSkillGen()">
+            <div class="abs__but" id="abs_content">
+                <h1>• WORKOUTS, WORKOUTS, AND MORE WORKOUTS! • </h1>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function pushSkillGen() {
+            var num = Math.floor(Math.random() * 5 + 1);
+            if (num == 1) {
+                document.getElementById("push_content").innerHTML = "WORKOUT 1:  you are strong, you are courageous, you are brave :)  <br>• superset 3x8 (each)- arnold press: minimum weight 10; shoulder press: minimum weight 15 <br>• machine chest press: 4x10 <br>• machine chest fly: minimum weight: 45; 4x10 <br>• katana extension: minimum weight 7.5; 4x8 <br>• push up pyramid: minimum 8 <br>• forearm press-up: 3x5";
+                document.getElementById("push_content").style.textAlign =   "left";
+            } else if (num == 2) {
+                document.getElementById("push_content").innerHTML = "WORKOUT 2:  you are strong, you are courageous, you are brave :)  <br>• bench press: minimum weight 75; 4x10 <br>• inverted bench press: minimum weight 20; 4x10 <br>• db t-raise: minimum weight 5; 4x10 <br>• rope tri pull: minimum weight 30; 4x8 <br>• push down machine: minimum weight 4; 4x10 <br>• dips: 4x10 <br>• push ups: 4x5";
+                document.getElementById("push_content").style.textAlign = "left";
+            } else if (num == 3) {
+                document.getElementById("push_content").innerHTML = "WORKOUT 3:  you are strong, you are courageous, you are brave :)  <br>• db shoulder press: minimum weight 20; 4x10 <br>• db tricep extension: minimum weight 20; 4x10 <br>• barbell skull crushers: minimum weight 20; 3x8 <br>• low chest fly: minimum weight 7.5; 3x8 <br>• cross cable pull: minimum weight 7.5; 3x8 <br>• superset 3x6: lat raises, push ups";
+                document.getElementById("push_content").style.textAlign = "left";
+            } else if (num == 4) {
+                document.getElementById("push_content").innerHTML = "WORKOUT 4:  you are strong, you are courageous, you are brave :)  <br>• bb shoulder press: minimum weight 45; 4x8 <br>• db close grip bench press: minimum weight 20; 4x10 <br>• rope tri pull: minimum weight 30; 4x8 <br>• chest fly: minimum weight 55; 4x10 <br>• reverse fly: minimum weight 40; 3x10 <br>• single arm cross cable: 3x10 <br>• dips: 4x10";
+                document.getElementById("push_content").style.textAlign = "left";
+            } else if (num == 5) {
+                document.getElementById("push_content").innerHTML = "WORKOUT 5:   you are strong, you are courageous, you are brave :)  <br>• db arnold press: minimum weight 10; 4x10 <br>• db single arm tri extension: minimum weight 10; 4x10 <br>• push down machine: minimum weight 4; 4x10 <br>• cable chest fly: minimum weight 12.5; 4x10 <br>• diamond push ups: 3x8 <br>• push ups + scapula ups: 3x8";
+                document.getElementById("push_content").style.textAlign = "left";
+            } else if (num == 6) {
+                document.getElementById("push_content").innerHTML = "WORKOUT 6: <br>";
+                document.getElementById("push_content").style.textAlign = "left";
+            } else if (num == 7) {
+                document.getElementById("push_content").innerHTML = "WORKOUT 7: <br>";
+                document.getElementById("push_content").style.textAlign = "left";
+            } else if (num == 8) {
+                document.getElementById("push_content").innerHTML = "WORKOUT 8: <br>";
+                document.getElementById("push_content").style.textAlign = "left";
+            } else if (num == 9) {
+                document.getElementById("push_content").innerHTML = "WORKOUT 9: <br>";
+                document.getElementById("push_content").style.textAlign = "left";
+            } else if (num == 10) {
+                document.getElementById("push_content").innerHTML = "WORKOUT 10: <br>";
+                document.getElementById("push_content").style.textAlign = "left";
+            } else if (num == 11) {
+                document.getElementById("push_content").innerHTML = "WORKOUT 11: <br>";
+                document.getElementById("push_content").style.textAlign = "left";
+            } else if (num == 12) {
+                document.getElementById("push_content").innerHTML = "WORKOUT 12: <br>";
+                document.getElementById("push_content").style.textAlign = "left";
+            } else if (num == 13) {
+                document.getElementById("push_content").innerHTML = "WORKOUT 13: <br>";
+                document.getElementById("push_content").style.textAlign = "left";
+            } else if (num == 14) {
+                document.getElementById("push_content").innerHTML = "WORKOUT 14: <br>";
+                document.getElementById("push_content").style.textAlign = "left";
+            } else if (num == 15) {
+                document.getElementById("push_content").innerHTML = "WORKOUT 15: <br>";
+                document.getElementById("push_content").style.textAlign = "left";
+            } else if (num == 16) {
+                document.getElementById("push_content").innerHTML = "WORKOUT 16: <br>";
+                document.getElementById("push_content").style.textAlign = "left";
+            } else if (num == 17) {
+                document.getElementById("push_content").innerHTML = "WORKOUT 17: <br>";
+                document.getElementById("push_content").style.textAlign = "left";
+            } else if (num == 18) {
+                document.getElementById("push_content").innerHTML = "WORKOUT 18:  you are strong, you are courageous, you are brave :)  <br>";
+                document.getElementById("push_content").style.textAlign = "left";
+            } else if (num == 19) {
+                document.getElementById("push_content").innerHTML = "WORKOUT 19: <br>";
+                document.getElementById("push_content").style.textAlign = "left";
+            } else if (num == 20) {
+                document.getElementById("push_content").innerHTML = "WORKOUT 20: <br>";
+                document.getElementById("push_content").style.textAlign = "left";
+            }
+        }
+
+        function pullSkillGen() {
+            var num = Math.floor(Math.random() * 5 + 1);
+            if (num == 1) {
+                document.getElementById("pull_content").innerHTML = "WORKOUT 1: <br>• if i added some words here would it make the whole page filled up db bicep curl: minimum weight 10; 4x10 <br>• db vertical curl: minimum weight 10; 4x10 <br>• concentration curl: minimum weight 20; 4x10 <br>• sitting pull machine: minimum weight 45; 4x8 <br>• laying pull machine: minimum weight 25; 3x8 <br>• knee cable pull: minimum weight 25; 4x10 <br>• db bi curls and side things: light weight";
+                document.getElementById("pull_content").style.textAlign = "left";
+            } else if (num == 2) {
+                document.getElementById("pull_content").innerHTML = "WORKOUT 2: <br>• db hammer curls: minimum weight 15; 4x10 <br>• seated row: minimum weight 60; 4x8 <br>• lat pull down: minimum weight 55; 3x10 <br>• machine bicep curl: minimum weight 10; 4x10 <br>• db rows: minimum weight 15; 3x10 <br>• sitting rope pull back: minimum weight 45; 4x10 <br>• knee cable pull: minimum weight 25; 4x10 <br>• db bi curls and side things: light weight";
+                document.getElementById("pull_content").style.textAlign = "left";
+            } else if (num == 3) {
+                document.getElementById("pull_content").innerHTML = "WORKOUT 3: <br>• pull ups: 3x5 <br>• db seated bicep curls: minimum weight 15; 4x10 <br>• bb curls: minimum weight 20; 4x10 <br>• superset 4x8- db hammer curls, db vertical curls: minimum weight 10 <br>• sitting pull machine: minimum weight 45; 4x8 <br>• australian curls: 4x6 <br>• db bi curls and side things: light weight";
+                document.getElementById("push_content").style.textAlign = "left";
+            } else if (num == 4) {
+                document.getElementById("pull_content").innerHTML = "WORKOUT 4: <br>• single arm seated row: minimum weight 20; 4x10 <br>• knee cable pull: minimum weight 25; 4x10 <br>• laying pull machine: minimum weight 25; 4x8 <br>• lat pull down machine: minimum weight 25; 3x8 <br>• cable side bi curls: minimum weight 2.5; 3x8 <br>• cable curl: minimum weight 15; 3x8 <br>• db bi curls and side things: light weight";
+                document.getElementById("push_content").style.textAlign = "left";
+            } else if (num == 5) {
+                document.getElementById("pull_content").innerHTML = "WORKOUT 5: <br>• superset 4x10: bicep curls, hammer curls: minimum weight 10 <br> • spider curls: minimum weight 20; 4x10 <br>• db rows: minimum weight 15; 4x8 <br>• pull-ups: 2x5 <br>• cable lat pulls: minimum weight 40; 3x10 <br>• face pulls: minimum weight 40; 3x10 <br>• db bi curls and side things: light weight";
+                document.getElementById("pull_content").style.textAlign = "left";
+            } else if (num == 6) {
+                document.getElementById("pull_content").innerHTML = "WORKOUT 6: <br>";
+                document.getElementById("push_content").style.textAlign = "left";
+            } else if (num == 7) {
+                document.getElementById("pull_content").innerHTML = "WORKOUT 7: <br>";
+                document.getElementById("pull_content").style.textAlign = "left";
+            } else if (num == 8) {
+                document.getElementById("pull_content").innerHTML = "WORKOUT 8: <br>";
+                document.getElementById("pull_content").style.textAlign = "left";
+            } else if (num == 9) {
+                document.getElementById("pull_content").innerHTML = "WORKOUT 9: <br>";
+                document.getElementById("pull_content").style.textAlign = "left";
+            } else if (num == 10) {
+                document.getElementById("pull_content").innerHTML = "WORKOUT 10: <br>";
+                document.getElementById("pull_content").style.textAlign = "left";
+            } else if (num == 11) {
+                document.getElementById("pull_content").innerHTML = "WORKOUT 11: <br>";
+                document.getElementById("pull_content").style.textAlign = "left";
+            } else if (num == 12) {
+                document.getElementById("pull_content").innerHTML = "WORKOUT 12: <br>";
+                document.getElementById("pull_content").style.textAlign = "left";
+            } else if (num == 13) {
+                document.getElementById("pull_content").innerHTML = "WORKOUT 13: <br>";
+                document.getElementById("pull_content").style.textAlign = "left";
+            } else if (num == 14) {
+                document.getElementById("pull_content").innerHTML = "WORKOUT 14: <br>";
+                document.getElementById("pull_content").style.textAlign = "left";
+            } else if (num == 15) {
+                document.getElementById("pull_content").innerHTML = "WORKOUT 15: <br>";
+                document.getElementById("pull_content").style.textAlign = "left";
+            } else if (num == 16) {
+                document.getElementById("pull_content").innerHTML = "WORKOUT 16: <br>";
+                document.getElementById("pull_content").style.textAlign = "left";
+            } else if (num == 17) {
+                document.getElementById("pull_content").innerHTML = "WORKOUT 17: <br>";
+                document.getElementById("pull_content").style.textAlign = "left";
+            } else if (num == 18) {
+                document.getElementById("pull_content").innerHTML = "WORKOUT 18: <br>";
+                document.getElementById("pull_content").style.textAlign = "left";
+            } else if (num == 19) {
+                document.getElementById("pull_content").innerHTML = "WORKOUT 19: <br>";
+                document.getElementById("pull_content").style.textAlign = "left";
+            } else if (num == 20) {
+                document.getElementById("pull_content").innerHTML = "WORKOUT 20: <br>";
+                document.getElementById("pull_content").style.textAlign = "left";
+            }
+        }
+
+        function legsSkillGen() {
+            var num = Math.floor(Math.random() * 20 + 1);
+            num = 1;
+            if (num == 1) {
+                document.getElementById("legs_content").innerHTML = "WORKOUT 1: <br>• squats heels elevated: minimum weight 65; 3x10 <br>• hack squats: minimum weight 50; 3x8 <br>• toes raises: minimum weight 10; 4x10 <br>• hip adductors: minimum weight 3;  4x10 <br>• hip abductors: minimum weight 4; 4x10<br>• single leg rdls: minimum weight 15; 3x8<br>• butt circuit: fire hydrant extension, back bent leg kick, back straight leg kick,back straight leg hold, back to side, side lifts, side circles, side hold; 15 of everything";
+                document.getElementById("legs_content").style.textAlign = "left";
+            }  else if (num == 2) {
+                document.getElementById("legs_content").innerHTML = "WORKOUT 2: <br>• squats: minimum weight 75; 4x10 <br>• bulgarian split squats: minimum weight 10; 3x8 <br>• hip bridges: minimum weight 4; 4x10 <br>• kick back: minimum weight 22; 3x10 <br>• kick side: minimum weight 12.5; 3x10 <br>• butt circuit: fire hydrant extension, back bent leg kick, back straight leg kick,back straight leg hold, back to side, side lifts, side circles, side hold; 15 of everything";
+                document.getElementById("legs_content").style.textAlign = "left";
+            } else if (num == 3) {
+                document.getElementById("legs_content").innerHTML = "WORKOUT 3: <br>";
+                document.getElementById("legs_content").style.textAlign = "left";
+            } else if (num == 4) {
+                document.getElementById("legs_content").innerHTML = "WORKOUT 4: <br>";
+                document.getElementById("legs_content").style.textAlign = "left";
+            } else if (num == 5) {
+                document.getElementById("legs_content").innerHTML = "WORKOUT 5: <br>";
+                document.getElementById("legs_content").style.textAlign = "left";
+            } else if (num == 6) {
+                document.getElementById("legs_content").innerHTML = "WORKOUT 6: <br>";
+                document.getElementById("legs_content").style.textAlign = "left";
+            } else if (num == 7) {
+                document.getElementById("legs_content").innerHTML = "WORKOUT 7: <br>";
+                document.getElementById("legs_content").style.textAlign = "left";
+            } else if (num == 8) {
+                document.getElementById("legs_content").innerHTML = "WORKOUT 8: <br>";
+                document.getElementById("legs_content").style.textAlign = "left";
+            } else if (num == 9) {
+                document.getElementById("legs_content").innerHTML = "WORKOUT 9: <br>";
+                document.getElementById("legs_content").style.textAlign = "left";
+            } else if (num == 10) {
+                document.getElementById("legs_content").innerHTML = "WORKOUT 10: <br>";
+                document.getElementById("legs_content").style.textAlign = "left";
+            } else if (num == 11) {
+                document.getElementById("legs_content").innerHTML = "WORKOUT 11: <br>";
+                document.getElementById("legs_content").style.textAlign = "left";
+            } else if (num == 12) {
+                document.getElementById("legs_content").innerHTML = "WORKOUT 12: <br>";
+                document.getElementById("legs_content").style.textAlign = "left";
+            } else if (num == 13) {
+                document.getElementById("legs_content").innerHTML = "WORKOUT 13: <br>";
+                document.getElementById("legs_content").style.textAlign = "left";
+            } else if (num == 14) {
+                document.getElementById("legs_content").innerHTML = "WORKOUT 14: <br>";
+                document.getElementById("pull_content").style.textAlign = "left";
+            } else if (num == 15) {
+                document.getElementById("legs_content").innerHTML = "WORKOUT 15: <br>";
+                document.getElementById("legs_content").style.textAlign = "left";
+            } else if (num == 16) {
+                document.getElementById("legs_content").innerHTML = "WORKOUT 16: <br>";
+                document.getElementById("legs_content").style.textAlign = "left";
+            } else if (num == 17) {
+                document.getElementById("legs_content").innerHTML = "WORKOUT 17: <br>";
+                document.getElementById("legs_content").style.textAlign = "left";
+            } else if (num == 18) {
+                document.getElementById("legs_content").innerHTML = "WORKOUT 18: <br>";
+                document.getElementById("legs_content").style.textAlign = "left";
+            } else if (num == 19) {
+                document.getElementById("legs_content").innerHTML = "WORKOUT 19: <br>";
+                document.getElementById("legs_content").style.textAlign = "left";
+            } else if (num == 20) {
+                document.getElementById("legs_content").innerHTML = "WORKOUT 20: <br>";
+                document.getElementById("legs_content").style.textAlign = "left";
+            }
+        }
+
+        function absSkillGen() {
+            var num = Math.floor(Math.random() * 20 + 1);
+            if (num == 1) {
+                document.getElementById("abs_content").innerHTML = "WORKOUT 1: <br>";
+                document.getElementById("abs_content").style.textAlign = "left";
+            } else if (num == 2) {
+                document.getElementById("abs_content").innerHTML = "WORKOUT 2: <br>";
+                document.getElementById("abs_content").style.textAlign = "left";
+            } else if (num == 3) {
+                document.getElementById("abs_content").innerHTML = "WORKOUT 3: <br>";
+                document.getElementById("abs_content").style.textAlign = "left";
+            } else if (num == 4) {
+                document.getElementById("abs_content").innerHTML = "WORKOUT 4: <br>";
+                document.getElementById("abs_content").style.textAlign = "left";
+            } else if (num == 5) {
+                document.getElementById("abs_content").innerHTML = "WORKOUT 5: <br>";
+                document.getElementById("abs_content").style.textAlign = "left";
+            } else if (num == 6) {
+                document.getElementById("abs_content").innerHTML = "WORKOUT 6: <br>";
+                document.getElementById("abs_content").style.textAlign = "left";
+            } else if (num == 7) {
+                document.getElementById("abs_content").innerHTML = "WORKOUT 7: <br>";
+                document.getElementById("abs_content").style.textAlign = "left";
+            } else if (num == 8) {
+                document.getElementById("abs_content").innerHTML = "WORKOUT 8: <br>";
+                document.getElementById("abs_content").style.textAlign = "left";
+            } else if (num == 9) {
+                document.getElementById("abs_content").innerHTML = "WORKOUT 9: <br>";
+                document.getElementById("abs_content").style.textAlign = "left";
+            } else if (num == 10) {
+                document.getElementById("abs_content").innerHTML = "WORKOUT 10: <br>";
+                document.getElementById("abs_content").style.textAlign = "left";
+            } else if (num == 11) {
+                document.getElementById("abs_content").innerHTML = "WORKOUT 11: <br>";
+                document.getElementById("abs_content").style.textAlign = "left";
+            } else if (num == 12) {
+                document.getElementById("abs_content").innerHTML = "WORKOUT 12: <br>";
+                document.getElementById("abs_content").style.textAlign = "left";
+            } else if (num == 13) {
+                document.getElementById("abs_content").innerHTML = "WORKOUT 13: <br>";
+                document.getElementById("abs_content").style.textAlign = "left";
+            } else if (num == 14) {
+                document.getElementById("abs_content").innerHTML = "WORKOUT 14: <br>";
+                document.getElementById("abs_content").style.textAlign = "left";
+            } else if (num == 15) {
+                document.getElementById("abs_content").innerHTML = "WORKOUT 15: <br>";
+                document.getElementById("abs_content").style.textAlign = "left";
+            } else if (num == 16) {
+                document.getElementById("abs_content").innerHTML = "WORKOUT 16: <br>";
+                document.getElementById("abs_content").style.textAlign = "left";
+            } else if (num == 17) {
+                document.getElementById("abs_content").innerHTML = "WORKOUT 17: <br>";
+                document.getElementById("abs_content").style.textAlign = "left";
+            } else if (num == 18) {
+                document.getElementById("abs_content").innerHTML = "WORKOUT 18: <br>";
+                document.getElementById("abs_content").style.textAlign = "left";
+            } else if (num == 19) {
+                document.getElementById("abs_content").innerHTML = "WORKOUT 19: <br>";
+                document.getElementById("abs_content").style.textAlign = "left";
+            } else if (num == 20) {
+                document.getElementById("abs_content").innerHTML = "WORKOUT 20: <br>";
+                document.getElementById("abs_content").style.textAlign = "left";
+            }
+        }
+    </script>           
+
+</body>
+</html>
