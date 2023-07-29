@@ -84,7 +84,7 @@
             </div>
             <input type="button" class="push" value="Press Here" onclick="pushSkillGen()">
             <div class="push__but" id="push_content">
-                <h1>• WORKOUTS, WORKOUTS, AND MORE WORKOUTS! •  </h1>
+                <h1 class="workout__descrip">• WORKOUTS, WORKOUTS, AND MORE WORKOUTS! •  </h1>
             </div>
         </div>
     </div>
@@ -98,7 +98,7 @@
             </div>
             <input type="button" class="pull" value="Bi's and Back Workout" onclick="pullSkillGen()">
             <div class="pull__but" id="pull_content">
-                <h1>• WORKOUTS, WORKOUTS, AND MORE WORKOUTS! • </h1>
+                <h1 class="workout__descrip">• WORKOUTS, WORKOUTS, AND MORE WORKOUTS! • </h1>
             </div>
         </div>
     </div>
@@ -112,7 +112,7 @@
             </div>
             <input type="button" class="legs" value="Legs Workout" onclick="legsSkillGen()">
             <div class="legs__but" id="legs_content">
-                <h1>• WORKOUTS, WORKOUTS, AND MORE WORKOUTS! • </h1>
+                <h1 class="workout__descrip">• WORKOUTS, WORKOUTS, AND MORE WORKOUTS! • </h1>
             </div>
         </div>
     </div>
@@ -122,275 +122,166 @@
         <div class="abs__container">
             <div class="abs__content">
                 <h1> • ABS!!!! • </h1>
-                <h2>just keep livin</h2>
+                <h2>The ab section is a little bit different than the rest.  I usually stay pretty consistent with abs and do very similar workouts everytime I'm at the gym.  Because of that... <br> here's the daily workout: <br> • 1 min plank each way x2 <br> • 20 crunches each way <br> • 15 alternating leg kicks (each side) <br> • 15 leg lifts <br> • 15 bicycles (each side) <br> • 20 "what the button says" x2</h2>
             </div>
-            <input type="button" class="abs" value="Ab Workout" onclick="absSkillGen()">
+            <input type="button" class="abs" value="button says: " onclick="absSkillGen()">
             <div class="abs__but" id="abs_content">
-                <h1>• WORKOUTS, WORKOUTS, AND MORE WORKOUTS! • </h1>
+                <h1 class="workout__descrip">• WORKOUTS, WORKOUTS, AND MORE WORKOUTS! • </h1>
             </div>
         </div>
     </div>
 
     <script>
         function pushSkillGen() {
-            var num = Math.floor(Math.random() * 5 + 1);
+            var num = Math.floor(Math.random() * 10 + 1);
             if (num == 1) {
-                document.getElementById("push_content").innerHTML = "WORKOUT 1:  you are strong, you are courageous, you are brave :)  <br>• superset 3x8 (each)- arnold press: minimum weight 10; shoulder press: minimum weight 15 <br>• machine chest press: 4x10 <br>• machine chest fly: minimum weight: 45; 4x10 <br>• katana extension: minimum weight 7.5; 4x8 <br>• push up pyramid: minimum 8 <br>• forearm press-up: 3x5";
+                document.getElementById("push_content").innerHTML = "WORKOUT 1:  YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>• superset 3x8 (each)- arnold press, shoulder press-more weight <br>• machine chest press: 4x10 <br>• machine chest fly: 4x10 <br>• katana extension: 4x8 <br>• push up pyramid: minimum 8 <br>• forearm press-up: 3x5";
                 document.getElementById("push_content").style.textAlign =   "left";
             } else if (num == 2) {
-                document.getElementById("push_content").innerHTML = "WORKOUT 2:  you are strong, you are courageous, you are brave :)  <br>• bench press: minimum weight 75; 4x10 <br>• inverted bench press: minimum weight 20; 4x10 <br>• db t-raise: minimum weight 5; 4x10 <br>• rope tri pull: minimum weight 30; 4x8 <br>• push down machine: minimum weight 4; 4x10 <br>• dips: 4x10 <br>• push ups: 4x5";
+                document.getElementById("push_content").innerHTML = "WORKOUT 2:  YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>• bench press: 4x10 <br>• inverted bench press: 4x10 <br>• db t-raise: 4x10 <br>• rope tri pull: 4x8 <br>• push down machine: 4x10 <br>• dips: 4x10 <br>• push ups: 4x5";
                 document.getElementById("push_content").style.textAlign = "left";
             } else if (num == 3) {
-                document.getElementById("push_content").innerHTML = "WORKOUT 3:  you are strong, you are courageous, you are brave :)  <br>• db shoulder press: minimum weight 20; 4x10 <br>• db tricep extension: minimum weight 20; 4x10 <br>• barbell skull crushers: minimum weight 20; 3x8 <br>• low chest fly: minimum weight 7.5; 3x8 <br>• cross cable pull: minimum weight 7.5; 3x8 <br>• superset 3x6: lat raises, push ups";
+                document.getElementById("push_content").innerHTML = "WORKOUT 3:   YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>• db shoulder press: 4x10 <br>• db tricep extension: 4x10 <br>• barbell skull crushers: 3x8 <br>• low chest fly: 3x8 <br>• cross cable pull: 3x8 <br>• superset 3x6: lat raises, push ups";
                 document.getElementById("push_content").style.textAlign = "left";
             } else if (num == 4) {
-                document.getElementById("push_content").innerHTML = "WORKOUT 4:  you are strong, you are courageous, you are brave :)  <br>• bb shoulder press: minimum weight 45; 4x8 <br>• db close grip bench press: minimum weight 20; 4x10 <br>• rope tri pull: minimum weight 30; 4x8 <br>• chest fly: minimum weight 55; 4x10 <br>• reverse fly: minimum weight 40; 3x10 <br>• single arm cross cable: 3x10 <br>• dips: 4x10";
+                document.getElementById("push_content").innerHTML = "WORKOUT 4:   YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>• bb shoulder press: 4x8 <br>• db close grip bench press: 4x10 <br>• rope tri pull: 4x8 <br>• chest fly: 4x10 <br>• reverse fly: 3x10 <br>• single arm cross cable: 3x10 <br>• dips: 4x10";
                 document.getElementById("push_content").style.textAlign = "left";
             } else if (num == 5) {
-                document.getElementById("push_content").innerHTML = "WORKOUT 5:   you are strong, you are courageous, you are brave :)  <br>• db arnold press: minimum weight 10; 4x10 <br>• db single arm tri extension: minimum weight 10; 4x10 <br>• push down machine: minimum weight 4; 4x10 <br>• cable chest fly: minimum weight 12.5; 4x10 <br>• diamond push ups: 3x8 <br>• push ups + scapula ups: 3x8";
+                document.getElementById("push_content").innerHTML = "WORKOUT 5:    YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>• db arnold press: 4x10 <br>• db single arm tri extension: 4x10 <br>• push down machine: 4x10 <br>• cable chest fly: 4x10 <br>• diamond push ups: 3x8 <br>• push ups + scapula ups: 3x8";
                 document.getElementById("push_content").style.textAlign = "left";
             } else if (num == 6) {
-                document.getElementById("push_content").innerHTML = "WORKOUT 6: <br>";
+                document.getElementById("push_content").innerHTML = "WORKOUT 6:  YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>• superset- shoulder press, arnold press: 4x10  <br> • db t-raise: 3x8 <br> machine chest press: 4x10 <br> • push down machine: 4x10 <br> • bb skull crushers: 3x10 <br> superset- db kickbacks, db side swings: 4x10";
                 document.getElementById("push_content").style.textAlign = "left";
             } else if (num == 7) {
-                document.getElementById("push_content").innerHTML = "WORKOUT 7: <br>";
+                document.getElementById("push_content").innerHTML = "WORKOUT 7:  YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>• bench press: 4x8 <br> • inverted bench press: 4x10 <br> • db single arm tri extension: 4x10 <br> • single arm cross cable pull: 3x8 <br> • cable push down: 4x10 <br> • rope tri extension: 4x10 <br> superset- db kickbacks, db side swings: 4x10";
                 document.getElementById("push_content").style.textAlign = "left";
             } else if (num == 8) {
-                document.getElementById("push_content").innerHTML = "WORKOUT 8: <br>";
+                document.getElementById("push_content").innerHTML = "WORKOUT 8:  YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>• superset- db bench press, db arnold press: 4x10 <br> • db t-raise: 4x6 <br> • low chest fly: 4x8 <br> • katana extension: 4x8 <br> • push ups: 4x10 <br> • superset- db kickbacks, db side swings: 4x10";
                 document.getElementById("push_content").style.textAlign = "left";
             } else if (num == 9) {
-                document.getElementById("push_content").innerHTML = "WORKOUT 9: <br>";
+                document.getElementById("push_content").innerHTML = "WORKOUT 9:  YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>• bb shoulder press: 4x8 <br>•  db shoulder press: 3x10 <br> db inverted chest press: 4x10 <br> • db tri extension: 4x10 <br> • machine tri extension: 4x10 <br> • rope tri push down: 4x10 <br> • dips: 4x10 <br> • diamond push-ups: 3x5 <br> • superset- db kickbacks, db side swings: 4x10";
                 document.getElementById("push_content").style.textAlign = "left";
             } else if (num == 10) {
-                document.getElementById("push_content").innerHTML = "WORKOUT 10: <br>";
+                document.getElementById("push_content").innerHTML = "WORKOUT 10:  YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>• bb skull crushers: 4x10 <br> • machine chest fly: 4x10 <br> • push down machine: 4x10 <br> • machine chest press: 4x10 <br> • machine tri extension: 4x10 <br> • push up + scapula push up: 2x5 <br> • superset- db kickbacks, db side swings: 4x10";
                 document.getElementById("push_content").style.textAlign = "left";
             } else if (num == 11) {
                 document.getElementById("push_content").innerHTML = "WORKOUT 11: <br>";
                 document.getElementById("push_content").style.textAlign = "left";
-            } else if (num == 12) {
-                document.getElementById("push_content").innerHTML = "WORKOUT 12: <br>";
-                document.getElementById("push_content").style.textAlign = "left";
-            } else if (num == 13) {
-                document.getElementById("push_content").innerHTML = "WORKOUT 13: <br>";
-                document.getElementById("push_content").style.textAlign = "left";
-            } else if (num == 14) {
-                document.getElementById("push_content").innerHTML = "WORKOUT 14: <br>";
-                document.getElementById("push_content").style.textAlign = "left";
-            } else if (num == 15) {
-                document.getElementById("push_content").innerHTML = "WORKOUT 15: <br>";
-                document.getElementById("push_content").style.textAlign = "left";
-            } else if (num == 16) {
-                document.getElementById("push_content").innerHTML = "WORKOUT 16: <br>";
-                document.getElementById("push_content").style.textAlign = "left";
-            } else if (num == 17) {
-                document.getElementById("push_content").innerHTML = "WORKOUT 17: <br>";
-                document.getElementById("push_content").style.textAlign = "left";
-            } else if (num == 18) {
-                document.getElementById("push_content").innerHTML = "WORKOUT 18:  you are strong, you are courageous, you are brave :)  <br>";
-                document.getElementById("push_content").style.textAlign = "left";
-            } else if (num == 19) {
-                document.getElementById("push_content").innerHTML = "WORKOUT 19: <br>";
-                document.getElementById("push_content").style.textAlign = "left";
-            } else if (num == 20) {
-                document.getElementById("push_content").innerHTML = "WORKOUT 20: <br>";
-                document.getElementById("push_content").style.textAlign = "left";
-            }
+            } 
         }
 
         function pullSkillGen() {
             var num = Math.floor(Math.random() * 5 + 1);
             if (num == 1) {
-                document.getElementById("pull_content").innerHTML = "WORKOUT 1: <br>• if i added some words here would it make the whole page filled up db bicep curl: minimum weight 10; 4x10 <br>• db vertical curl: minimum weight 10; 4x10 <br>• concentration curl: minimum weight 20; 4x10 <br>• sitting pull machine: minimum weight 45; 4x8 <br>• laying pull machine: minimum weight 25; 3x8 <br>• knee cable pull: minimum weight 25; 4x10 <br>• db bi curls and side things: light weight";
+                document.getElementById("pull_content").innerHTML = "WORKOUT 1: YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>•db bicep curl: 4x10 <br>• db vertical curl: 4x10 <br>• concentration curl: 4x10 <br>• sitting pull machine: 4x8 <br>• laying pull machine: 25; 3x8 <br>• knee cable pull: 4x10 <br>• db bi curls and side things: light weight";
                 document.getElementById("pull_content").style.textAlign = "left";
             } else if (num == 2) {
-                document.getElementById("pull_content").innerHTML = "WORKOUT 2: <br>• db hammer curls: minimum weight 15; 4x10 <br>• seated row: minimum weight 60; 4x8 <br>• lat pull down: minimum weight 55; 3x10 <br>• machine bicep curl: minimum weight 10; 4x10 <br>• db rows: minimum weight 15; 3x10 <br>• sitting rope pull back: minimum weight 45; 4x10 <br>• knee cable pull: minimum weight 25; 4x10 <br>• db bi curls and side things: light weight";
+                document.getElementById("pull_content").innerHTML = "WORKOUT 2: YOU MAY NOT BE THERE YET, BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>• db hammer curls: 4x10 <br>• seated row: 4x8 <br>• lat pull down: 3x10 <br>• machine bicep curl: 4x10 <br>• db rows: 3x10 <br>• sitting rope pull back: 4x10 <br>• knee cable pull: 4x10 <br>• db bi curls and side things: light weight";
                 document.getElementById("pull_content").style.textAlign = "left";
             } else if (num == 3) {
-                document.getElementById("pull_content").innerHTML = "WORKOUT 3: <br>• pull ups: 3x5 <br>• db seated bicep curls: minimum weight 15; 4x10 <br>• bb curls: minimum weight 20; 4x10 <br>• superset 4x8- db hammer curls, db vertical curls: minimum weight 10 <br>• sitting pull machine: minimum weight 45; 4x8 <br>• australian curls: 4x6 <br>• db bi curls and side things: light weight";
+                document.getElementById("pull_content").innerHTML = "WORKOUT 3: YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>• pull ups: 3x5 <br>• db seated bicep curls: 4x10 <br>• bb curls: 4x10 <br>• superset 4x8- db hammer curls, db vertical curls: <br>• sitting pull machine: 4x8 <br>• australian curls: 4x6 <br>• db bi curls and side things: light weight";
                 document.getElementById("push_content").style.textAlign = "left";
             } else if (num == 4) {
-                document.getElementById("pull_content").innerHTML = "WORKOUT 4: <br>• single arm seated row: minimum weight 20; 4x10 <br>• knee cable pull: minimum weight 25; 4x10 <br>• laying pull machine: minimum weight 25; 4x8 <br>• lat pull down machine: minimum weight 25; 3x8 <br>• cable side bi curls: minimum weight 2.5; 3x8 <br>• cable curl: minimum weight 15; 3x8 <br>• db bi curls and side things: light weight";
+                document.getElementById("pull_content").innerHTML = "WORKOUT 4: YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>• single arm seated row: 4x10 <br>• knee cable pull: 4x10 <br>• laying pull machine: 4x8 <br>• lat pull down machine: 3x8 <br>• cable side bi curls: 3x8 <br>• cable curl: <br>• db bi curls and side things: light weight";
                 document.getElementById("push_content").style.textAlign = "left";
             } else if (num == 5) {
-                document.getElementById("pull_content").innerHTML = "WORKOUT 5: <br>• superset 4x10: bicep curls, hammer curls: minimum weight 10 <br> • spider curls: minimum weight 20; 4x10 <br>• db rows: minimum weight 15; 4x8 <br>• pull-ups: 2x5 <br>• cable lat pulls: minimum weight 40; 3x10 <br>• face pulls: minimum weight 40; 3x10 <br>• db bi curls and side things: light weight";
+                document.getElementById("pull_content").innerHTML = "WORKOUT 5: YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>• superset bicep curls, hammer curls: 4x10 <br> • spider curls:  4x10 <br>• db rows: 4x8 <br>• pull-ups: 2x5 <br>• cable lat pulls: 3x10 <br>• face pulls: 3x10 <br>• db bi curls and side things: light weight";
                 document.getElementById("pull_content").style.textAlign = "left";
             } else if (num == 6) {
-                document.getElementById("pull_content").innerHTML = "WORKOUT 6: <br>";
+                document.getElementById("pull_content").innerHTML = "WORKOUT 6: YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>";
                 document.getElementById("push_content").style.textAlign = "left";
             } else if (num == 7) {
-                document.getElementById("pull_content").innerHTML = "WORKOUT 7: <br>";
+                document.getElementById("pull_content").innerHTML = "WORKOUT 7: YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br> <br>";
                 document.getElementById("pull_content").style.textAlign = "left";
             } else if (num == 8) {
-                document.getElementById("pull_content").innerHTML = "WORKOUT 8: <br>";
+                document.getElementById("pull_content").innerHTML = "WORKOUT 8: YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>";
                 document.getElementById("pull_content").style.textAlign = "left";
             } else if (num == 9) {
-                document.getElementById("pull_content").innerHTML = "WORKOUT 9: <br>";
+                document.getElementById("pull_content").innerHTML = "WORKOUT 9: YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>";
                 document.getElementById("pull_content").style.textAlign = "left";
             } else if (num == 10) {
-                document.getElementById("pull_content").innerHTML = "WORKOUT 10: <br>";
+                document.getElementById("pull_content").innerHTML = "WORKOUT 10: YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>";
                 document.getElementById("pull_content").style.textAlign = "left";
             } else if (num == 11) {
                 document.getElementById("pull_content").innerHTML = "WORKOUT 11: <br>";
                 document.getElementById("pull_content").style.textAlign = "left";
-            } else if (num == 12) {
-                document.getElementById("pull_content").innerHTML = "WORKOUT 12: <br>";
-                document.getElementById("pull_content").style.textAlign = "left";
-            } else if (num == 13) {
-                document.getElementById("pull_content").innerHTML = "WORKOUT 13: <br>";
-                document.getElementById("pull_content").style.textAlign = "left";
-            } else if (num == 14) {
-                document.getElementById("pull_content").innerHTML = "WORKOUT 14: <br>";
-                document.getElementById("pull_content").style.textAlign = "left";
-            } else if (num == 15) {
-                document.getElementById("pull_content").innerHTML = "WORKOUT 15: <br>";
-                document.getElementById("pull_content").style.textAlign = "left";
-            } else if (num == 16) {
-                document.getElementById("pull_content").innerHTML = "WORKOUT 16: <br>";
-                document.getElementById("pull_content").style.textAlign = "left";
-            } else if (num == 17) {
-                document.getElementById("pull_content").innerHTML = "WORKOUT 17: <br>";
-                document.getElementById("pull_content").style.textAlign = "left";
-            } else if (num == 18) {
-                document.getElementById("pull_content").innerHTML = "WORKOUT 18: <br>";
-                document.getElementById("pull_content").style.textAlign = "left";
-            } else if (num == 19) {
-                document.getElementById("pull_content").innerHTML = "WORKOUT 19: <br>";
-                document.getElementById("pull_content").style.textAlign = "left";
-            } else if (num == 20) {
-                document.getElementById("pull_content").innerHTML = "WORKOUT 20: <br>";
-                document.getElementById("pull_content").style.textAlign = "left";
-            }
+            } 
         }
 
         function legsSkillGen() {
-            var num = Math.floor(Math.random() * 20 + 1);
-            num = 1;
+            var num = Math.floor(Math.random() * 10 + 1);
             if (num == 1) {
-                document.getElementById("legs_content").innerHTML = "WORKOUT 1: <br>• squats heels elevated: minimum weight 65; 3x10 <br>• hack squats: minimum weight 50; 3x8 <br>• toes raises: minimum weight 10; 4x10 <br>• hip adductors: minimum weight 3;  4x10 <br>• hip abductors: minimum weight 4; 4x10<br>• single leg rdls: minimum weight 15; 3x8<br>• butt circuit: fire hydrant extension, back bent leg kick, back straight leg kick,back straight leg hold, back to side, side lifts, side circles, side hold; 15 of everything";
+                document.getElementById("legs_content").innerHTML = "WORKOUT 1: YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>• squats heels elevated: minimum weight 65; 3x10 <br>• hack squats: minimum weight 50; 3x8 <br>• toes raises: minimum weight 10; 4x10 <br>• hip adductors: minimum weight 3;  4x10 <br>• hip abductors: minimum weight 4; 4x10<br>• single leg rdls: minimum weight 15; 3x8<br>• butt circuit: fire hydrant extension, back bent leg kick, back straight leg kick,back straight leg hold, back to side, side lifts, side circles, side hold; 15 of everything";
                 document.getElementById("legs_content").style.textAlign = "left";
             }  else if (num == 2) {
-                document.getElementById("legs_content").innerHTML = "WORKOUT 2: <br>• squats: minimum weight 75; 4x10 <br>• bulgarian split squats: minimum weight 10; 3x8 <br>• hip bridges: minimum weight 4; 4x10 <br>• kick back: minimum weight 22; 3x10 <br>• kick side: minimum weight 12.5; 3x10 <br>• butt circuit: fire hydrant extension, back bent leg kick, back straight leg kick,back straight leg hold, back to side, side lifts, side circles, side hold; 15 of everything";
+                document.getElementById("legs_content").innerHTML = "WORKOUT 2: YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>• squats: minimum weight 75; 4x10 <br>• bulgarian split squats: minimum weight 10; 3x8 <br>• hip bridges: minimum weight 4; 4x10 <br>• kick back: minimum weight 22; 3x10 <br>• kick side: minimum weight 12.5; 3x10 <br>• butt circuit: fire hydrant extension, back bent leg kick, back straight leg kick,back straight leg hold, back to side, side lifts, side circles, side hold; 15 of everything";
                 document.getElementById("legs_content").style.textAlign = "left";
             } else if (num == 3) {
-                document.getElementById("legs_content").innerHTML = "WORKOUT 3: <br>";
+                document.getElementById("legs_content").innerHTML = "WORKOUT 3: YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>• leg extension: 4x10 <br> • leg curl: 4x10 <br> • smith machine alternating leg lunges: 3x8 <br> • standing calf raises: 3x20 <br> • db rdls: 4x10 <br> • pistol squats: 3x6 <br>• butt circuit: fire hydrant extension, back bent leg kick, back straight leg kick,back straight leg hold, back to side, side lifts, side circles, side hold; 15 of everything";
                 document.getElementById("legs_content").style.textAlign = "left";
             } else if (num == 4) {
-                document.getElementById("legs_content").innerHTML = "WORKOUT 4: <br>";
+                document.getElementById("legs_content").innerHTML = "WORKOUT 4: YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>• hip bridges: 4x10 <br> • glute machine: 4x10 <br> • hip adductors: 4x10 <br> • hip abductors: 4x10 <br>• butt circuit: fire hydrant extension, back bent leg kick, back straight leg kick,back straight leg hold, back to side, side lifts, side circles, side hold; 15 of everything <br> • stairs 5 min!";
                 document.getElementById("legs_content").style.textAlign = "left";
             } else if (num == 5) {
-                document.getElementById("legs_content").innerHTML = "WORKOUT 5: <br>";
+                document.getElementById("legs_content").innerHTML = "WORKOUT 5: YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>• hack squats: 4x10 <br> • leg extension: 4x10 <br> • lying leg curl: 4x8 <br> sitting calf raise: 4x10 <br> pistol squats: 3x6 <br>• butt circuit: fire hydrant extension, back bent leg kick, back straight leg kick,back straight leg hold, back to side, side lifts, side circles, side hold; 15 of everything";
                 document.getElementById("legs_content").style.textAlign = "left";
             } else if (num == 6) {
-                document.getElementById("legs_content").innerHTML = "WORKOUT 6: <br>";
+                document.getElementById("legs_content").innerHTML = "WORKOUT 6: YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>• squats-heavy: 3x8 <br> • hip bridge: 4x8 <br> • leg press: 4x10 <br> kick back: 4x10 <br> • kick side <br> • db rdls: 4x10 <br>• butt circuit: fire hydrant extension, back bent leg kick, back straight leg kick,back straight leg hold, back to side, side lifts, side circles, side hold; 15 of everything";
                 document.getElementById("legs_content").style.textAlign = "left";
             } else if (num == 7) {
-                document.getElementById("legs_content").innerHTML = "WORKOUT 7: <br>";
+                document.getElementById("legs_content").innerHTML = "WORKOUT 7: YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>• hack squats: 4x8 <br> bulgarian split squats: 4x8 <br> single leg press: 4x10 <br> • hip abductors: 4x10 <br> • single leg rdls: 4x10 <br>• butt circuit: fire hydrant extension, back bent leg kick, back straight leg kick,back straight leg hold, back to side, side lifts, side circles, side hold; 15 of everything";
                 document.getElementById("legs_content").style.textAlign = "left";
             } else if (num == 8) {
-                document.getElementById("legs_content").innerHTML = "WORKOUT 8: <br>";
+                document.getElementById("legs_content").innerHTML = "WORKOUT 8: YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>• squats heels elevated: 4x10 <br> • leg press: 4x10 <br> • leg extension: 4x8 <br> • sitting leg curl: 4x8 <br> • pistol squats: 4x5 <br>• butt circuit: fire hydrant extension, back bent leg kick, back straight leg kick,back straight leg hold, back to side, side lifts, side circles, side hold; 15 of everything";
                 document.getElementById("legs_content").style.textAlign = "left";
             } else if (num == 9) {
-                document.getElementById("legs_content").innerHTML = "WORKOUT 9: <br>";
+                document.getElementById("legs_content").innerHTML = "WORKOUT 9: YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br> <br>• squats-light: 4x10 <br> • hip bridge w hold: 4x8 <br> • single leg press: 4x8<br> •  bulgarian split squat (no weight): 4x12 <br>• butt circuit: fire hydrant extension, back bent leg kick, back straight leg kick,back straight leg hold, back to side, side lifts, side circles, side hold; 15 of everything";
                 document.getElementById("legs_content").style.textAlign = "left";
             } else if (num == 10) {
-                document.getElementById("legs_content").innerHTML = "WORKOUT 10: <br>";
+                document.getElementById("legs_content").innerHTML = "WORKOUT 10: YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br>• hack squats: 4x8 <br> • hip adductors: 4x10 <br> • hip abductors: 4x10  <br> • kick back: 3x10 <br> kick side: 3x10 <br> • db rdls: 4x10 <br>• butt circuit: fire hydrant extension, back bent leg kick, back straight leg kick,back straight leg hold, back to side, side lifts, side circles, side hold; 15 of everything";
                 document.getElementById("legs_content").style.textAlign = "left";
             } else if (num == 11) {
                 document.getElementById("legs_content").innerHTML = "WORKOUT 11: <br>";
                 document.getElementById("legs_content").style.textAlign = "left";
-            } else if (num == 12) {
-                document.getElementById("legs_content").innerHTML = "WORKOUT 12: <br>";
-                document.getElementById("legs_content").style.textAlign = "left";
-            } else if (num == 13) {
-                document.getElementById("legs_content").innerHTML = "WORKOUT 13: <br>";
-                document.getElementById("legs_content").style.textAlign = "left";
-            } else if (num == 14) {
-                document.getElementById("legs_content").innerHTML = "WORKOUT 14: <br>";
-                document.getElementById("pull_content").style.textAlign = "left";
-            } else if (num == 15) {
-                document.getElementById("legs_content").innerHTML = "WORKOUT 15: <br>";
-                document.getElementById("legs_content").style.textAlign = "left";
-            } else if (num == 16) {
-                document.getElementById("legs_content").innerHTML = "WORKOUT 16: <br>";
-                document.getElementById("legs_content").style.textAlign = "left";
-            } else if (num == 17) {
-                document.getElementById("legs_content").innerHTML = "WORKOUT 17: <br>";
-                document.getElementById("legs_content").style.textAlign = "left";
-            } else if (num == 18) {
-                document.getElementById("legs_content").innerHTML = "WORKOUT 18: <br>";
-                document.getElementById("legs_content").style.textAlign = "left";
-            } else if (num == 19) {
-                document.getElementById("legs_content").innerHTML = "WORKOUT 19: <br>";
-                document.getElementById("legs_content").style.textAlign = "left";
-            } else if (num == 20) {
-                document.getElementById("legs_content").innerHTML = "WORKOUT 20: <br>";
-                document.getElementById("legs_content").style.textAlign = "left";
-            }
+            } 
         }
 
         function absSkillGen() {
-            var num = Math.floor(Math.random() * 20 + 1);
+            var num = Math.floor(Math.random() * 10 + 1);
             if (num == 1) {
-                document.getElementById("abs_content").innerHTML = "WORKOUT 1: <br>";
+                document.getElementById("abs_content").innerHTML = "WORKOUT 1: YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br> v-ups";
                 document.getElementById("abs_content").style.textAlign = "left";
             } else if (num == 2) {
-                document.getElementById("abs_content").innerHTML = "WORKOUT 2: <br>";
+                document.getElementById("abs_content").innerHTML = "WORKOUT 2: YOU MAY NOT BE THERE YET, BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br> <br> tuck ups";
                 document.getElementById("abs_content").style.textAlign = "left";
             } else if (num == 3) {
-                document.getElementById("abs_content").innerHTML = "WORKOUT 3: <br>";
+                document.getElementById("abs_content").innerHTML = "WORKOUT 3: YOU MAY NOT BE THERE YET, BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br> flutter kicks";
                 document.getElementById("abs_content").style.textAlign = "left";
             } else if (num == 4) {
-                document.getElementById("abs_content").innerHTML = "WORKOUT 4: <br>";
+                document.getElementById("abs_content").innerHTML = "WORKOUT 4: YOU MAY NOT BE THERE YET, BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br> hollow hold";
                 document.getElementById("abs_content").style.textAlign = "left";
             } else if (num == 5) {
-                document.getElementById("abs_content").innerHTML = "WORKOUT 5: <br>";
+                document.getElementById("abs_content").innerHTML = "WORKOUT 5: YOU MAY NOT BE THERE YET, BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br> hollow rocks";
                 document.getElementById("abs_content").style.textAlign = "left";
             } else if (num == 6) {
-                document.getElementById("abs_content").innerHTML = "WORKOUT 6: <br>";
+                document.getElementById("abs_content").innerHTML = "WORKOUT 6: YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br> plank hip dips";
                 document.getElementById("abs_content").style.textAlign = "left";
             } else if (num == 7) {
-                document.getElementById("abs_content").innerHTML = "WORKOUT 7: <br>";
+                document.getElementById("abs_content").innerHTML = "WORKOUT 7: YOU MAY NOT BE THERE YET, BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br> cherry pickers ";
                 document.getElementById("abs_content").style.textAlign = "left";
             } else if (num == 8) {
-                document.getElementById("abs_content").innerHTML = "WORKOUT 8: <br>";
+                document.getElementById("abs_content").innerHTML = "WORKOUT 8: YOU MAY NOT BE THERE YET, BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br> butt ups";
                 document.getElementById("abs_content").style.textAlign = "left";
             } else if (num == 9) {
-                document.getElementById("abs_content").innerHTML = "WORKOUT 9: <br>";
+                document.getElementById("abs_content").innerHTML = "WORKOUT 9: YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br> toe touches ";
                 document.getElementById("abs_content").style.textAlign = "left";
             } else if (num == 10) {
-                document.getElementById("abs_content").innerHTML = "WORKOUT 10: <br>";
+                document.getElementById("abs_content").innerHTML = "WORKOUT 10: YOU MAY NOT BE THERE YET,  BUT YOU ARE CLOSER THAN YOU WERE YETSERDAY :) <br><br> alternating leg lifts";
                 document.getElementById("abs_content").style.textAlign = "left";
             } else if (num == 11) {
                 document.getElementById("abs_content").innerHTML = "WORKOUT 11: <br>";
                 document.getElementById("abs_content").style.textAlign = "left";
-            } else if (num == 12) {
-                document.getElementById("abs_content").innerHTML = "WORKOUT 12: <br>";
-                document.getElementById("abs_content").style.textAlign = "left";
-            } else if (num == 13) {
-                document.getElementById("abs_content").innerHTML = "WORKOUT 13: <br>";
-                document.getElementById("abs_content").style.textAlign = "left";
-            } else if (num == 14) {
-                document.getElementById("abs_content").innerHTML = "WORKOUT 14: <br>";
-                document.getElementById("abs_content").style.textAlign = "left";
-            } else if (num == 15) {
-                document.getElementById("abs_content").innerHTML = "WORKOUT 15: <br>";
-                document.getElementById("abs_content").style.textAlign = "left";
-            } else if (num == 16) {
-                document.getElementById("abs_content").innerHTML = "WORKOUT 16: <br>";
-                document.getElementById("abs_content").style.textAlign = "left";
-            } else if (num == 17) {
-                document.getElementById("abs_content").innerHTML = "WORKOUT 17: <br>";
-                document.getElementById("abs_content").style.textAlign = "left";
-            } else if (num == 18) {
-                document.getElementById("abs_content").innerHTML = "WORKOUT 18: <br>";
-                document.getElementById("abs_content").style.textAlign = "left";
-            } else if (num == 19) {
-                document.getElementById("abs_content").innerHTML = "WORKOUT 19: <br>";
-                document.getElementById("abs_content").style.textAlign = "left";
-            } else if (num == 20) {
-                document.getElementById("abs_content").innerHTML = "WORKOUT 20: <br>";
-                document.getElementById("abs_content").style.textAlign = "left";
-            }
+            } 
         }
     </script>           
 
