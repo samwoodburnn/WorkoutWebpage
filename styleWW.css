@@ -290,7 +290,7 @@
 }
 
 @media screen and (max-width: 400px) {
-    .push__heading {
+    .push {
         font-size: 28px;
     }
 
