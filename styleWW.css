@@ -228,6 +228,7 @@
 }
 
 /* push section */
+/*
 .push {
     background-color:#66c48e;
 }
@@ -300,7 +301,67 @@
     .workout__descrip {
         font-size: 2px;
     }
+} */
+/* push section */
+.push {
+    background-color: #66c48e;
 }
+.push__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; /* Adjusted to 100% */
+    margin: 0 auto;
+    height: 90vh; /* Changed to viewport height (vh) instead of percentage */
+    text-align: center;
+    padding: 30px; /* Reduced padding for smaller screens */
+}
+.push__content {
+    width: 100%; /* Add an appropriate unit (e.g., %, px, em) here */
+    padding: 0;
+}
+.push__content h1 {
+    padding-top: 30px; /* Reduced padding for smaller screens */
+    color: #3f845c;
+    font-size: 3em; /* Changed to em unit */
+    text-align: center;
+}
+.push__content h2 {
+    color: #c7f1d8;
+    font-size: 2em; /* Changed to em unit */
+    padding: 10px; /* Reduced padding for smaller screens */
+}
+.push {
+    background-color: #66c48e;
+    font-size: 1.5em; /* Changed to em unit */
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px; /* Reduced padding for smaller screens */
+}
+.push:hover {
+    background-color: #b2cebe;
+}
+.push__but {
+    color: #c7f1d8;
+    font-size: 1.5em; /* Changed to em unit */
+    border: #3f845c;
+    border-width: 10px;
+    border-style: ridge;
+    border-radius: 60px;
+    padding: 20px 40px; /* Reduced padding for smaller screens */
+    margin: 20px; /* Reduced margins for smaller screens */
+}
+
+@media screen and (max-width: 400px) {
+    .push {
+        font-size: 1em; /* Adjust the font size for smaller screens */
+    }
+    .push__container {
+        font-size: 1.5em; /* Adjust the font size for smaller screens */
+    }
+}
+
 
 
 /* pull section */
