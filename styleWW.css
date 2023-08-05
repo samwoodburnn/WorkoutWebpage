@@ -305,6 +305,9 @@
     .push__content h2 {
         font-size: 12px;
     }
+    .push__but {
+        padding: 20px;
+    }
     .workout__descrip {
         font-size: 2px;
     }
