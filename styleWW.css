@@ -382,17 +382,27 @@
     margin-top: 50px;
     margin-bottom: 100px;
 }
-
 @media screen and (max-width: 400px) {
-    .pull__heading {
-        font-size: 28px;
+    .pull {
+     
     }
 
-    .pull__container {
-        font-size: 22px;
+    .pull__content {
+        font-size: 16px;
+    }
+    .pull__content h2 {
+        font-size: 12px;
+    }
+    .pull__but {
+        padding: 4px 4px 4px 4px;
+        margin-left: 2px;
+        margin-right: 2px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        font-size: 10px;
     }
     .workout__descrip {
-        font-size: 22px;
+        font-size: 2px;
     }
 }
 
@@ -459,16 +469,29 @@
 }
 
 @media screen and (max-width: 400px) {
-    .legs__heading {
-        font-size: 28px;
+    .legs {
+     
     }
 
-    .legs__container {
-        font-size: 24px;
+    .legs__content {
+        font-size: 16px;
+    }
+    .legs__content h2 {
+        font-size: 12px;
+    }
+    .legs__but {
+        padding: 4px 4px 4px 4px;
+        margin-left: 2px;
+        margin-right: 2px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        font-size: 10px;
     }
     .workout__descrip {
-        font-size: 22px;
+        font-size: 2px;
     }
+}
+
 }
 
 
@@ -538,14 +561,26 @@
 }
 
 @media screen and (max-width: 400px) {
-    .abs__heading {
-        font-size: 28px;
+    .abs {
+     
     }
 
-    .abs__container {
-        font-size: 24px;
+    .abs__content {
+        font-size: 16px;
+    }
+    .abs__content h2 {
+        font-size: 12px;
+    }
+    .abs__but {
+        padding: 4px 4px 4px 4px;
+        margin-left: 2px;
+        margin-right: 2px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        font-size: 10px;
     }
     .workout__descrip {
-        font-size: 22px;
+        font-size: 2px;
     }
 }
+
