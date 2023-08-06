@@ -132,6 +132,14 @@
     </div>
 
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const mobileMenuButton = document.getElementById("mobile-menu");
+            const navbarMenu = document.querySelector(".navbar__menu");
+            mobileMenuButton.addEventListener("click", function () {
+                navbarMenu.classList.toggle("active");
+            });
+        });
+
         function pushSkillGen() {
             var num = Math.floor(Math.random() * 10 + 1);
             if (num == 1) {
