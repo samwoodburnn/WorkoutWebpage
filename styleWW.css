@@ -299,11 +299,11 @@
      
     }
 
-    .push__content {
-        font-size: 5px;
+    .push__content h1{
+        font-size: 15px;
     }
     .push__content h2 {
-        font-size: 5px;
+        font-size: 12px;
     }
     .push__but {
         margin-left: 2px;
@@ -313,7 +313,7 @@
         font-size: 10px;
     }
     .workout__descrip {
-        font-size: 2px;
+        font-size: 4px;
     }
 }
 
